@@ -16,6 +16,7 @@ const leagueRoutes = require("./routes/league.routes");
 const userPreferencesRoutes = require("./routes/userPreferences.routes");
 const matchRoutes = require("./routes/match.routes");
 const quizRoutes = require("./routes/quiz.routes");
+const cityRoutes = require("./routes/city.routes");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -37,6 +38,7 @@ app.use("/api/v1/league", leagueRoutes);
 app.use("/api/v1/userPreferences", userPreferencesRoutes);
 app.use("/api/v1/match", matchRoutes)
 app.use("/api/v1/quiz", quizRoutes)
+app.use("/api/v1/city", cityRoutes);
 
 // Health Check Route
 app.get("/api/v1/health", (req, res) => {
