@@ -1,5 +1,4 @@
 const City = require("../models/city.model");
-const cloudinary = require("../config/cloudinaryConfig");
 const errorHandler = require("../utils/error");
 const responseHandler = require("../utils/response");
 
